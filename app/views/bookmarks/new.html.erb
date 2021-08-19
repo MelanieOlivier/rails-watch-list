@@ -1,0 +1,12 @@
+<div class="container mt-5">
+
+<%= simple_form_for [ @list, @bookmark ] do |f| %>
+        <%= f.association :movie %>
+        <%= f.input :comment %>
+        <%= f.submit %>
+      <% end %>
+
+<hr>
+<%= link_to "All lists", lists_path(@lists), class:"btn btn-dark" %>
+
+</div>
