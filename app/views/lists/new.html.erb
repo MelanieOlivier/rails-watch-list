@@ -10,9 +10,12 @@
     <div class="form-actions">
       <%= f.button :submit, class:"btn btn-dark w-50" %>
     </div>
+
+    <%= f.input :photo, as: :file %>
+
   <% end %>
 
 <hr>
-<%= link_to "All lists", lists_path(@lists) %>
+<%= link_to "All lists", root_path, class:"btn btn-dark" %>
 
 </div>
