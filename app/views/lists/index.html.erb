@@ -15,6 +15,8 @@
         <tr>
           <td><%= list.name %></td>
           <td><%= link_to 'Show', list, class:"btn btn-success" %></td>
+          <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+
         </tr>
       <% end %>
       <%= cl_image_tag("eus2lwrrpftevqn6xdwb", width: 400, height: 300, crop: :fill) %>
