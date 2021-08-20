@@ -19,7 +19,8 @@ class BookmarksController < ApplicationController
     # @bookmark.movie = @movie
 
     if @bookmark.save
-      redirect_to @list, notice: 'The new bookmark was successfully created.'
+      redirect_to root_path, notice: 'The new bookmark was successfully created.'
+      # redirect_to @list, notice: 'The new bookmark was successfully created.'
     else
       render :new
     end
