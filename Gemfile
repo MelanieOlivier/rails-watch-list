@@ -28,11 +28,10 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-# We don’t want to share those secret keys on Github, we can use the dotenv gem for security.
-gem 'dotenv-rails', groups: [:development, :test]
-
 gem 'cloudinary', '~> 1.16.0'
 
+# We don’t want to share those secret keys on Github, we can use the dotenv gem for security.
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 # Gemfile
